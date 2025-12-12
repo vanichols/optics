@@ -1,0 +1,9 @@
+TOMST soil sensors
+
+TOMST is the company, from the Czech Republic
+Used the TMS-4 soil measurement system
+
+Uses the 'Lolly Manager' application for downloading
+Currently on version 1.61
+
+Probes are 10 cm long, inserted so measurements occur from 0-10cm soil depths
