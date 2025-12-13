@@ -1,8 +1,10 @@
-env_id,crop_id,cropdesc,tkw_of_planted_seed_g,germination_pct,ergot_pct_when_received
-sexy1-24/25,a,Annual cereal rye (SU Thor) hybrid,42,95,NA
-sexy2-25/26,a,Annual cereal rye (variety??) hybrid,41.5,85,NA
-sexy1-24/25,p,"Perennial cereal rye population from Germany, seed from Foulum 23/24 season",27,86,2
-sexy2-25/26,p,Perennial cereal rye population from RePhilDK25 (seed increase in Flakkebjerg),23.5,65,NA
-eusun1-24/25,p,"Perennial cereal rye population from Germany, seed from Foulum 23/24 season",27,86,NA
-seed1-24/25,p,"Perennial cereal rye population from Germany, seed from Foulum 23/24 season",27,86,NA
-seed1-25/26,p,"Perennial cereal rye population from Germany, seed from RePhilDK25",23.5,65,NA
+env_key,crop_id,crop_desc,tkw_of_planted_seed_g,germination_pct
+0101,p,"Perennial cereal rye population from Germany, seed from Foulum 23/24 season (which had 2% ergot when received)",27,86
+0101,mix,NA,NA,NA
+0101,a,Annual cereal rye (SU Thor) hybrid,42,95
+0202,mix,NA,NA,NA
+0202,p,Perennial cereal rye population from RePhilDK25 (seed increase in Flakkebjerg),23.5,65
+0202,a,Annual cereal rye (variety??) hybrid,41.5,85
+0301,p,"Perennial cereal rye population from Germany, seed from Foulum 23/24 season",27,86
+0001,p,"Perennial cereal rye population from Germany, seed from Foulum 23/24 season",27,86
+0302,p,"Perennial cereal rye population from Germany, seed from RePhilDK25",23.5,65
