@@ -51,16 +51,16 @@ y1a <-
          plot_id = plot,
          samptype,
          trt_id,
-         grain_yield_dry_Mg_ha = grainyield_dry_ton_ha,
-         grain_protein_drybasis_pct = predicted_protein_dry_basis_percent,
-         grain_moisture_pct = predicted_vand_percent,
-         grain_tkw_drybasis_g = tkw_dry)
+         grain_Mgha = grainyield_dry_ton_ha,
+         gprotein_pct = predicted_protein_dry_basis_percent,
+         gmois_pct = predicted_vand_percent,
+         tkw_g = tkw_dry)
 
 #--weird things
 y1b <-
   y1a |>
   #--if it failed, ignore the yield
-  mutate(grain_yield_dry_Mg_ha = ifelse(samptype == "f", NA, grain_yield_dry_Mg_ha)) |>
+  mutate(grain_Mgha = ifelse(samptype == "f", NA, grain_Mgha)) |>
   #--not sure why the f plot side of 309 is included, remove it
   filter(!(plot_id == 309 & samptype == "f")) |>
   arrange(plot_id)
@@ -75,7 +75,7 @@ y1c <-
 
 grain <-
   y1c  |>
-  pivot_longer(grain_yield_dry_Mg_ha:grain_tkw_drybasis_g)
+  pivot_longer(grain_Mgha:tkw_g)
 
 
 # straw ------------------------------------------------------------
@@ -88,20 +88,20 @@ y2 <-
 y2a <-
   y2 |>
   mutate(
-  straw_moisture_pct = straw_moisture_content * 100) |>
+  smois_pct = straw_moisture_content * 100) |>
   select(env_key,
          plot_id = plot,
          samptype,
          trt_id,
-         straw_yield_dry_Mg_ha = strawyield_ton_ha,
-         straw_moisture_pct) |>
+         straw_Mgha = strawyield_ton_ha,
+         smois_pct) |>
   arrange(plot_id)
 
 #--no weird things...are the straw yields from the correct half?
 
 straw <-
   y2a  |>
-  pivot_longer(straw_yield_dry_Mg_ha:straw_moisture_pct)
+  pivot_longer(straw_Mgha:smois_pct)
 
 
 # think about it ----------------------------------------------------------
