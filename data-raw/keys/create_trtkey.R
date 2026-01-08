@@ -312,8 +312,11 @@ d12 <-
   separate(trt_key, into = c("xx", "trt_id"), remove = F) |>
   select(-xx) |>
   select(trt_id, everything()) |>
-  mutate(herb_id = ifelse(
-    str_detect(trt_id, "x"), "none", "herbicide"))
+  mutate(herb_id = case_when(
+    trt_id %in% c("a", "p", "apmix", "aprows", "acc", "pcc") ~ "herbicide",
+    trt_id %in% c("xa", "xp", "xapmix", "xaprows", "xacc", "xpcc") ~ "herbicide",
+    TRUE ~ "UHOH")
+  )
 
 # done --------------------------------------------------------------------
 
