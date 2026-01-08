@@ -100,17 +100,27 @@ y2a <-
 #--no weird things...are the straw yields from the correct half?
 
 straw <-
-  y2c  |>
+  y2a  |>
   pivot_longer(straw_yield_dry_Mg_ha:straw_moisture_pct)
 
 
-# combine -----------------------------------------------------------------
+# think about it ----------------------------------------------------------
 
-op_yields <-
+ylds <-
   grain |>
   bind_rows(straw) |>
   arrange(plot_id)
 
+#--in NA plots of mixes, everything shoudl be NA
+ylds1 <-
+  ylds |>
+  mutate(value = ifelse(samptype == "f", NA, value))
+
+
+#--write -------------------------------------------------------------------
+
+op_yields <-
+  ylds1
 
 usethis::use_data(op_yields, overwrite = TRUE)
 
