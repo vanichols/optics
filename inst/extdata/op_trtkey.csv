@@ -1,21 +1,21 @@
 env_key,trt_key,trt_desc,trt_id,crop_id,herb_id,cctrt_id,plantingrate_kgha,planting_desc,rowspacing_cm,plantingdepth_cm,pdate_ymd,bio1date_ymd,hdate_ymd
 0101,0101_p,Perennial cereal (PC) rye in 12.5 cm rows,p,p,herbicide,none,94,Aimed for 300 pl m-2 (1 kg perennial rye contains more seeds than 1 kg annual rye),12.5,3,2024-10-18,NA,2025-08-08
-0101,0101_xaprows,P and A planted in alternating 12.5 cm rows without weed control,xaprows,mix,none,none,113,"Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",12.5,3,2024-10-18,NA,2025-08-08
+0101,0101_xaprows,P and A planted in alternating 12.5 cm rows without weed control,xaprows,rowmix,none,none,999,XX,12.5,3,2024-10-18,NA,2025-08-08
 0101,0101_pcc,PC rye in 12.5 cm rows with a cover crop planted after grain harvest,pcc,p,herbicide,fall mix,94,Aimed for 300 pl m-2 (1 kg perennial rye contains more seeds than 1 kg annual rye),12.5,3,2024-10-18,NA,2025-08-08
 0101,0101_xa,A planted in 12.5 cm rows without weed control,xa,a,none,none,132,Aimed for 300 pl m-2,12.5,3,2024-10-18,NA,2025-08-08
 0101,0101_a,Annual cereal rye hybrid (A) planted in 12.5 cm rows,a,a,herbicide,none,132,Aimed for 300 pl m-2,12.5,3,2024-10-18,NA,2025-08-08
-0101,0101_aprows,P and A planted in alternating 12.5 cm rows,aprows,mix,herbicide,none,113,"Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",12.5,3,2024-10-18,NA,2025-08-08
+0101,0101_aprows,P and A planted in alternating 12.5 cm rows,aprows,rowmix,herbicide,none,999,XX,12.5,3,2024-10-18,NA,2025-08-08
 0101,0101_xacc,A planted in 12.5 cm rows with a cover crop planted after grain harvest without weed control,xacc,a,none,fall mix,132,Aimed for 300 pl m-2,12.5,3,2024-10-18,NA,2025-08-08
 0101,0101_xapmix,P and A mixture planted in 12.5 cm rows without weed control,xapmix,mix,none,none,113,"Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",12.5,3,2024-10-18,NA,2025-08-08
 0101,0101_apmix,P and A mixture planted in 12.5 cm rows,apmix,mix,none,none,113,"Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",12.5,3,2024-10-18,NA,2025-08-08
 0101,0101_acc,A planted in 12.5 cm rows with a cover crop planted after grain harvest,acc,a,herbicide,fall mix,132,Aimed for 300 pl m-2,12.5,3,2024-10-18,NA,2025-08-08
 0101,0101_xp,PC rye in 12.5 cm rows without weed control,xp,p,none,none,94,Aimed for 300 pl m-2 (1 kg perennial rye contains more seeds than 1 kg annual rye),12.5,3,2024-10-18,NA,2025-08-08
 0101,0101_xpcc,PC rye in 12.5 cm rows with a cover crop planted after grain harvest without weed control,xpcc,p,none,fall mix,94,Aimed for 300 pl m-2 (1 kg perennial rye contains more seeds than 1 kg annual rye),12.5,3,2024-10-18,NA,2025-08-08
-0202,0202_xaprows,P and A planted in alternating 12.5 cm rows without weed control,xaprows,mix,none,none,88,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
+0202,0202_xaprows,P and A planted in alternating 12.5 cm rows without weed control,xaprows,rowmix,none,none,999,XX,12.5,3,2025-09-26,NA,NA
 0202,0202_p,Perennial cereal (PC) rye in 12.5 cm rows,p,p,herbicide,none,80.5,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
 0202,0202_xpcc,PC rye in 12.5 cm rows with a cover crop planted after grain harvest without weed control,xpcc,p,none,fall mix,80.5,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
 0202,0202_apmix,P and A mixture planted in 12.5 cm rows,apmix,mix,none,none,88,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
-0202,0202_aprows,P and A planted in alternating 12.5 cm rows,aprows,mix,herbicide,none,88,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
+0202,0202_aprows,P and A planted in alternating 12.5 cm rows,aprows,rowmix,herbicide,none,999,XX,12.5,3,2025-09-26,NA,NA
 0202,0202_xa,A planted in 12.5 cm rows without weed control,xa,a,none,none,94,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
 0202,0202_xp,PC rye in 12.5 cm rows without weed control,xp,p,none,none,80.5,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
 0202,0202_xacc,A planted in 12.5 cm rows with a cover crop planted after grain harvest without weed control,xacc,a,none,fall mix,94,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA

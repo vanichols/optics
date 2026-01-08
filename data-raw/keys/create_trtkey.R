@@ -139,8 +139,8 @@ d3 <-
     crop_id == "acc" ~ "a",
     crop_id == "xacc" ~ "a",
 
-    crop_id == "aprows" ~ "mix",
-    crop_id == "xaprows" ~ "mix",
+    crop_id == "aprows" ~ "rowmix",
+    crop_id == "xaprows" ~ "rowmix",
     crop_id == "apmix" ~ "mix",
     crop_id == "xapmix" ~ "mix",
 
