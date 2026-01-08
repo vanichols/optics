@@ -1,44 +1,44 @@
-trt_key,trt_desc,env_key,trt_id,crop_id,cctrt_id,plantingrate_kgha,planting_desc,rowspacing_cm,plantingdepth_cm,pdate_ymd,bio1date_ymd,hdate_ymd
-0101_p,Perennial cereal (PC) rye in 12.5 cm rows,0101,p,p,none,94,Aimed for 300 pl m-2 (1 kg perennial rye contains more seeds than 1 kg annual rye),12.5,3,2024-10-18,NA,2025-08-08
-0101_xaprows,P and A planted in alternating 12.5 cm rows without weed control,0101,xaprows,mix,none,113,"Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",12.5,3,2024-10-18,NA,2025-08-08
-0101_pcc,PC rye in 12.5 cm rows with a cover crop planted after grain harvest,0101,pcc,p,fall mix,94,Aimed for 300 pl m-2 (1 kg perennial rye contains more seeds than 1 kg annual rye),12.5,3,2024-10-18,NA,2025-08-08
-0101_xa,A planted in 12.5 cm rows without weed control,0101,xa,a,none,132,Aimed for 300 pl m-2,12.5,3,2024-10-18,NA,2025-08-08
-0101_a,Annual cereal rye hybrid (A) planted in 12.5 cm rows,0101,a,a,none,132,Aimed for 300 pl m-2,12.5,3,2024-10-18,NA,2025-08-08
-0101_aprows,P and A planted in alternating 12.5 cm rows,0101,aprows,mix,none,113,"Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",12.5,3,2024-10-18,NA,2025-08-08
-0101_xacc,A planted in 12.5 cm rows with a cover crop planted after grain harvest without weed control,0101,xacc,a,fall mix,132,Aimed for 300 pl m-2,12.5,3,2024-10-18,NA,2025-08-08
-0101_xapmix,P and A mixture planted in 12.5 cm rows without weed control,0101,xapmix,mix,none,113,"Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",12.5,3,2024-10-18,NA,2025-08-08
-0101_apmix,P and A mixture planted in 12.5 cm rows,0101,apmix,mix,none,113,"Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",12.5,3,2024-10-18,NA,2025-08-08
-0101_acc,A planted in 12.5 cm rows with a cover crop planted after grain harvest,0101,acc,a,fall mix,132,Aimed for 300 pl m-2,12.5,3,2024-10-18,NA,2025-08-08
-0101_xp,PC rye in 12.5 cm rows without weed control,0101,xp,p,none,94,Aimed for 300 pl m-2 (1 kg perennial rye contains more seeds than 1 kg annual rye),12.5,3,2024-10-18,NA,2025-08-08
-0101_xpcc,PC rye in 12.5 cm rows with a cover crop planted after grain harvest without weed control,0101,xpcc,p,fall mix,94,Aimed for 300 pl m-2 (1 kg perennial rye contains more seeds than 1 kg annual rye),12.5,3,2024-10-18,NA,2025-08-08
-0202_xaprows,P and A planted in alternating 12.5 cm rows without weed control,0202,xaprows,mix,none,88,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
-0202_p,Perennial cereal (PC) rye in 12.5 cm rows,0202,p,p,none,80.5,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
-0202_xpcc,PC rye in 12.5 cm rows with a cover crop planted after grain harvest without weed control,0202,xpcc,p,fall mix,80.5,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
-0202_apmix,P and A mixture planted in 12.5 cm rows,0202,apmix,mix,none,88,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
-0202_aprows,P and A planted in alternating 12.5 cm rows,0202,aprows,mix,none,88,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
-0202_xa,A planted in 12.5 cm rows without weed control,0202,xa,a,none,94,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
-0202_xp,PC rye in 12.5 cm rows without weed control,0202,xp,p,none,80.5,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
-0202_xacc,A planted in 12.5 cm rows with a cover crop planted after grain harvest without weed control,0202,xacc,a,fall mix,94,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
-0202_xapmix,P and A mixture planted in 12.5 cm rows without weed control,0202,xapmix,mix,none,88,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
-0202_pcc,PC rye in 12.5 cm rows with a cover crop planted after grain harvest,0202,pcc,p,fall mix,80.5,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
-0202_acc,A planted in 12.5 cm rows with a cover crop planted after grain harvest,0202,acc,a,fall mix,94,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
-0202_a,Annual cereal rye hybrid (A) planted in 12.5 cm rows,0202,a,a,none,94,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
-0301_pmechwide24,PC rye planted in 25 cm rows with mechanical weed control (for a seed increase) in 2024,0301,pmechwide24,p,NA,94,Aimed for 300 pl m-2,25,3,2024-10-18,NA,2025-08-15
-0001_17West,"PC rye planted in XX cm rows at 1/3 plant density (100 pl m-2), unknown biomass harvest and row width",0001,17West,p,NA,31,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
-0001_17East,"PC rye planted in XX cm rows at full plant density (300 pl m-2), unknown biomass harvest and row width",0001,17East,p,NA,94,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
-0001_18West,"PC rye planted in XX cm rows at 1/3 plant density (100 pl m-2), unknown biomass harvest and row width",0001,18West,p,NA,31,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
-0001_18East,"PC rye planted in XX cm rows at full plant density (300 pl m-2), unknown biomass harvest and row width",0001,18East,p,NA,94,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
-0001_17West,"PC rye planted in XX cm rows at 1/3 plant density (100 pl m-2), unknown biomass harvest and row width",0001,17West,p,NA,31,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
-0001_17East,"PC rye planted in XX cm rows at full plant density (300 pl m-2), unknown biomass harvest and row width",0001,17East,p,NA,94,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
-0001_18West,"PC rye planted in XX cm rows at 1/3 plant density (100 pl m-2), unknown biomass harvest and row width",0001,18West,p,NA,31,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
-0001_18East,"PC rye planted in XX cm rows at full plant density (300 pl m-2), unknown biomass harvest and row width",0001,18East,p,NA,94,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
-0001_17West,"PC rye planted in XX cm rows at 1/3 plant density (100 pl m-2), unknown biomass harvest and row width",0001,17West,p,NA,31,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
-0001_17East,"PC rye planted in XX cm rows at full plant density (300 pl m-2), unknown biomass harvest and row width",0001,17East,p,NA,94,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
-0001_18West,"PC rye planted in XX cm rows at 1/3 plant density (100 pl m-2), unknown biomass harvest and row width",0001,18West,p,NA,31,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
-0001_18East,"PC rye planted in XX cm rows at full plant density (300 pl m-2), unknown biomass harvest and row width",0001,18East,p,NA,94,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
-0001_17West,"PC rye planted in XX cm rows at 1/3 plant density (100 pl m-2), unknown biomass harvest and row width",0001,17West,p,NA,31,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
-0001_17East,"PC rye planted in XX cm rows at full plant density (300 pl m-2), unknown biomass harvest and row width",0001,17East,p,NA,94,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
-0001_18West,"PC rye planted in XX cm rows at 1/3 plant density (100 pl m-2), unknown biomass harvest and row width",0001,18West,p,NA,31,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
-0001_18East,"PC rye planted in XX cm rows at full plant density (300 pl m-2), unknown biomass harvest and row width",0001,18East,p,NA,94,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
-0302_pmechwide24,PC rye planted in 25 cm rows with mechanical weed control (for a seed increase) in 2024,0302,pmechwide24,p,NA,80.5,Aimed for 300 pl m-2,25,3,2025-09-25,NA,NA
-0302_pmechwide25,PC rye planted in 25 cm rows with mechanical weed control (for a seed increase) in 2025,0302,pmechwide25,p,NA,80.5,Aimed for 300 pl m-2,25,3,2025-09-25,NA,NA
+env_key,trt_key,trt_desc,trt_id,crop_id,herb_id,cctrt_id,plantingrate_kgha,planting_desc,rowspacing_cm,plantingdepth_cm,pdate_ymd,bio1date_ymd,hdate_ymd
+0101,0101_p,Perennial cereal (PC) rye in 12.5 cm rows,p,p,herbicide,none,94,Aimed for 300 pl m-2 (1 kg perennial rye contains more seeds than 1 kg annual rye),12.5,3,2024-10-18,NA,2025-08-08
+0101,0101_xaprows,P and A planted in alternating 12.5 cm rows without weed control,xaprows,mix,none,none,113,"Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",12.5,3,2024-10-18,NA,2025-08-08
+0101,0101_pcc,PC rye in 12.5 cm rows with a cover crop planted after grain harvest,pcc,p,herbicide,fall mix,94,Aimed for 300 pl m-2 (1 kg perennial rye contains more seeds than 1 kg annual rye),12.5,3,2024-10-18,NA,2025-08-08
+0101,0101_xa,A planted in 12.5 cm rows without weed control,xa,a,none,none,132,Aimed for 300 pl m-2,12.5,3,2024-10-18,NA,2025-08-08
+0101,0101_a,Annual cereal rye hybrid (A) planted in 12.5 cm rows,a,a,herbicide,none,132,Aimed for 300 pl m-2,12.5,3,2024-10-18,NA,2025-08-08
+0101,0101_aprows,P and A planted in alternating 12.5 cm rows,aprows,mix,herbicide,none,113,"Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",12.5,3,2024-10-18,NA,2025-08-08
+0101,0101_xacc,A planted in 12.5 cm rows with a cover crop planted after grain harvest without weed control,xacc,a,none,fall mix,132,Aimed for 300 pl m-2,12.5,3,2024-10-18,NA,2025-08-08
+0101,0101_xapmix,P and A mixture planted in 12.5 cm rows without weed control,xapmix,mix,none,none,113,"Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",12.5,3,2024-10-18,NA,2025-08-08
+0101,0101_apmix,P and A mixture planted in 12.5 cm rows,apmix,mix,none,none,113,"Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",12.5,3,2024-10-18,NA,2025-08-08
+0101,0101_acc,A planted in 12.5 cm rows with a cover crop planted after grain harvest,acc,a,herbicide,fall mix,132,Aimed for 300 pl m-2,12.5,3,2024-10-18,NA,2025-08-08
+0101,0101_xp,PC rye in 12.5 cm rows without weed control,xp,p,none,none,94,Aimed for 300 pl m-2 (1 kg perennial rye contains more seeds than 1 kg annual rye),12.5,3,2024-10-18,NA,2025-08-08
+0101,0101_xpcc,PC rye in 12.5 cm rows with a cover crop planted after grain harvest without weed control,xpcc,p,none,fall mix,94,Aimed for 300 pl m-2 (1 kg perennial rye contains more seeds than 1 kg annual rye),12.5,3,2024-10-18,NA,2025-08-08
+0202,0202_xaprows,P and A planted in alternating 12.5 cm rows without weed control,xaprows,mix,none,none,88,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
+0202,0202_p,Perennial cereal (PC) rye in 12.5 cm rows,p,p,herbicide,none,80.5,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
+0202,0202_xpcc,PC rye in 12.5 cm rows with a cover crop planted after grain harvest without weed control,xpcc,p,none,fall mix,80.5,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
+0202,0202_apmix,P and A mixture planted in 12.5 cm rows,apmix,mix,none,none,88,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
+0202,0202_aprows,P and A planted in alternating 12.5 cm rows,aprows,mix,herbicide,none,88,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
+0202,0202_xa,A planted in 12.5 cm rows without weed control,xa,a,none,none,94,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
+0202,0202_xp,PC rye in 12.5 cm rows without weed control,xp,p,none,none,80.5,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
+0202,0202_xacc,A planted in 12.5 cm rows with a cover crop planted after grain harvest without weed control,xacc,a,none,fall mix,94,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
+0202,0202_xapmix,P and A mixture planted in 12.5 cm rows without weed control,xapmix,mix,none,none,88,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
+0202,0202_pcc,PC rye in 12.5 cm rows with a cover crop planted after grain harvest,pcc,p,herbicide,fall mix,80.5,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
+0202,0202_acc,A planted in 12.5 cm rows with a cover crop planted after grain harvest,acc,a,herbicide,fall mix,94,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
+0202,0202_a,Annual cereal rye hybrid (A) planted in 12.5 cm rows,a,a,herbicide,none,94,Aimed for 250 pl m-2,12.5,3,2025-09-26,NA,NA
+0301,0301_pmechwide24,PC rye planted in 25 cm rows with mechanical weed control (for a seed increase) in 2024,pmechwide24,p,herbicide,NA,94,Aimed for 300 pl m-2,25,3,2024-10-18,NA,2025-08-15
+0001,0001_17West,"PC rye planted in XX cm rows at 1/3 plant density (100 pl m-2), unknown biomass harvest and row width",17West,p,herbicide,NA,31,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
+0001,0001_17East,"PC rye planted in XX cm rows at full plant density (300 pl m-2), unknown biomass harvest and row width",17East,p,herbicide,NA,94,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
+0001,0001_18West,"PC rye planted in XX cm rows at 1/3 plant density (100 pl m-2), unknown biomass harvest and row width",18West,p,herbicide,NA,31,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
+0001,0001_18East,"PC rye planted in XX cm rows at full plant density (300 pl m-2), unknown biomass harvest and row width",18East,p,herbicide,NA,94,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
+0001,0001_17West,"PC rye planted in XX cm rows at 1/3 plant density (100 pl m-2), unknown biomass harvest and row width",17West,p,herbicide,NA,31,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
+0001,0001_17East,"PC rye planted in XX cm rows at full plant density (300 pl m-2), unknown biomass harvest and row width",17East,p,herbicide,NA,94,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
+0001,0001_18West,"PC rye planted in XX cm rows at 1/3 plant density (100 pl m-2), unknown biomass harvest and row width",18West,p,herbicide,NA,31,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
+0001,0001_18East,"PC rye planted in XX cm rows at full plant density (300 pl m-2), unknown biomass harvest and row width",18East,p,herbicide,NA,94,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
+0001,0001_17West,"PC rye planted in XX cm rows at 1/3 plant density (100 pl m-2), unknown biomass harvest and row width",17West,p,herbicide,NA,31,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
+0001,0001_17East,"PC rye planted in XX cm rows at full plant density (300 pl m-2), unknown biomass harvest and row width",17East,p,herbicide,NA,94,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
+0001,0001_18West,"PC rye planted in XX cm rows at 1/3 plant density (100 pl m-2), unknown biomass harvest and row width",18West,p,herbicide,NA,31,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
+0001,0001_18East,"PC rye planted in XX cm rows at full plant density (300 pl m-2), unknown biomass harvest and row width",18East,p,herbicide,NA,94,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
+0001,0001_17West,"PC rye planted in XX cm rows at 1/3 plant density (100 pl m-2), unknown biomass harvest and row width",17West,p,herbicide,NA,31,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
+0001,0001_17East,"PC rye planted in XX cm rows at full plant density (300 pl m-2), unknown biomass harvest and row width",17East,p,herbicide,NA,94,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
+0001,0001_18West,"PC rye planted in XX cm rows at 1/3 plant density (100 pl m-2), unknown biomass harvest and row width",18West,p,herbicide,NA,31,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
+0001,0001_18East,"PC rye planted in XX cm rows at full plant density (300 pl m-2), unknown biomass harvest and row width",18East,p,herbicide,NA,94,XX,9999,3,2024-12-31,2025-05-31,2025-08-19
+0302,0302_pmechwide24,PC rye planted in 25 cm rows with mechanical weed control (for a seed increase) in 2024,pmechwide24,p,herbicide,NA,80.5,Aimed for 300 pl m-2,25,3,2025-09-25,NA,NA
+0302,0302_pmechwide25,PC rye planted in 25 cm rows with mechanical weed control (for a seed increase) in 2025,pmechwide25,p,herbicide,NA,80.5,Aimed for 300 pl m-2,25,3,2025-09-25,NA,NA

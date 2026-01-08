@@ -304,14 +304,23 @@ d11 <-
   ))
 
 
-# done --------------------------------------------------------------------
 
+# 12. add herb_id ---------------------------------------------------------
 
-op_trtkey <-
+d12 <-
   d11 |>
   separate(trt_key, into = c("xx", "trt_id"), remove = F) |>
   select(-xx) |>
-  select(trt_key, trt_desc, everything())
+  select(trt_id, everything()) |>
+  mutate(herb_id = ifelse(
+    str_detect(trt_id, "x"), "none", "herbicide"))
+
+# done --------------------------------------------------------------------
+
+op_trtkey <-
+  d12 |>
+  select(env_key, trt_key, trt_desc, trt_id, crop_id, herb_id,
+         everything())
 
 usethis::use_data(op_trtkey, overwrite = TRUE)
 
