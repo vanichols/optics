@@ -12,7 +12,8 @@ a1 <-
   mutate(env_key = "0101",
          trt_key = paste(env_key, trt_id, sep = "_")) %>%
   select(trt_key, plot_id = plot) |>
-  distinct()
+  distinct() |>
+  mutate(block_id = paste0("b", str_sub(plot_id, 1, 1)))
 
 # ###############sexy2-25/26 ----------------------------------------------
 
@@ -20,7 +21,8 @@ b1 <-
   read_excel("data-raw/keys/sexy2-2025_eukey.xlsx", skip = 5) %>%
   mutate(env_key = "0202",
          trt_key = paste(env_key, trt, sep = "_")) %>%
-  select(trt_key, plot_id = plot)
+  select(trt_key, plot_id = plot) |>
+  mutate(block_id = paste0("b", str_sub(plot_id, 1, 1)))
 
 
 # ###############seed1-24/25 ----------------------------------------------
@@ -29,7 +31,8 @@ b1 <-
 
 c1 <-
   tibble(plot_id = c(1,2, 3, 4, 5, 6, 7),
-         trt_key = rep("0301_pmechwide24", 7))
+         trt_key = rep("0301_pmechwide24", 7),
+         block_id = NA)
 
 # ###############seed1-25/26 ----------------------------------------------
 
@@ -48,7 +51,8 @@ d1b <-
 
 d1 <-
   d1a |>
-  bind_rows(d1b)
+  bind_rows(d1b) |>
+  mutate(block_id = NA)
 
 # ###############eusun1-24/25 ----------------------------------------------
 
@@ -60,7 +64,15 @@ e1 <-
     env_key = "0001",
     trt_id = str_remove(treatment, "_"),
     trt_key = paste0(env_key, "_", trt_id)) |>
-  select(trt_key, plot_id)
+  select(trt_key, plot_id) |>
+  #--based on the plot map he shared
+  mutate(block_id = case_when(
+    plot_id %in% c(8, 55) ~ "b4",
+    plot_id %in% c(13, 69) ~ "b3",
+    plot_id %in% c(4, 3) ~ "b2",
+    plot_id %in% c(13, 69) ~ "b1",
+    TRUE ~ "UHOH"
+  ))
 
 
 
@@ -77,7 +89,7 @@ op_plotkey <-
   f1 |>
   separate(trt_key, into = c("env_key", "trt_id"), remove = F) |>
   mutate(plot_key = paste0(env_key, "_", plot_id)) |>
-  select(env_key, plot_key, trt_key, plot_id)
+  select(env_key, plot_key, trt_key, plot_id, block_id)
 
 
 usethis::use_data(op_plotkey, overwrite = TRUE)
