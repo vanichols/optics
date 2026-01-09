@@ -16,7 +16,7 @@ d1 <-
 
 d2 <-
   d1 |>
-  mutate(soilsens_id = case_when(
+  mutate(soilsensor_id = case_when(
   plot_id == "101" ~ "94243864",
   plot_id == "105" ~ "94243868",
   plot_id == "202" ~ "94243867",
@@ -31,9 +31,6 @@ d2 <-
 d2
 
 
-op_soilsenskey <- d2
+op_soilsensorkey <- d2
 
-usethis::use_data(op_soilsenskey, overwrite = T)
-
-sexy1_soilmois %>%
-  write_csv("inst/extdata/op_soilsenskey.csv")
+usethis::use_data(op_soilsensorkey, overwrite = T)
