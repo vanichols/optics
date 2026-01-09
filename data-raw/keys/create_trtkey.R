@@ -318,7 +318,7 @@ d12 <-
   select(trt_id, everything()) |>
   mutate(herb_id = case_when(
     trt_id %in% c("a", "p", "apmix", "aprows", "acc", "pcc") ~ "herbicide",
-    trt_id %in% c("xa", "xp", "xapmix", "xaprows", "xacc", "xpcc") ~ "herbicide",
+    trt_id %in% c("xa", "xp", "xapmix", "xaprows", "xacc", "xpcc") ~ "none",
     TRUE ~ "UHOH")
   )
 

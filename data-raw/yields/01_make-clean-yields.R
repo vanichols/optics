@@ -2,6 +2,7 @@
 #--make it into a long dataframe about harvest information
 #--grain yield, grain protein, grain moisture, straw yield, straw moisture, other...
 #--I did check and my calcs match Emma's final values, so only keeping those
+#--plot 305 straw value is much lower than others
 
 
 rm(list = ls())
@@ -22,6 +23,11 @@ tst <-
   yield_sexy1 |>
   filter(samptype != "y")
 #--203, 212, one side of 309
+
+#--plot 305 has low straw values
+tst1 <- yield_sexy1 |>
+  filter(plot == 305)
+
 
 
 y0 <-
