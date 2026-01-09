@@ -141,8 +141,8 @@ d3 <-
 
     crop_id == "aprows" ~ "rowmix",
     crop_id == "xaprows" ~ "rowmix",
-    crop_id == "apmix" ~ "mix",
-    crop_id == "xapmix" ~ "mix",
+    crop_id == "apmix" ~ "bulkmix",
+    crop_id == "xapmix" ~ "bulkmix",
 
     crop_id == "pmechwide24" ~ "p",
     crop_id == "pmechwide25" ~ "p",
@@ -193,7 +193,8 @@ d5 <-
 
     env_key == "0101" & crop_id == "p" ~ "94",
     env_key == "0101" & crop_id == "a" ~ "132",
-    env_key == "0101" & crop_id == "mix" ~ "113",
+    env_key == "0101" & crop_id == "rowmix" ~ "113",
+    env_key == "0101" & crop_id == "bulkmix" ~ "113",
     env_key == "0101" & crop_id == "p" ~ "94",
 
     env_key == "0301" ~ "94",
@@ -202,7 +203,8 @@ d5 <-
     #--lower planting rate in 25/26 season bc was planted earlier
     env_key == "0202" & crop_id == "p" ~ "80.5",
     env_key == "0202" & crop_id == "a" ~ "94",
-    env_key == "0202" & crop_id == "mix" ~ "88",
+    env_key == "0202" & crop_id == "rowmix" ~ "88",
+    env_key == "0202" & crop_id == "bulkmix" ~ "88",
     env_key == "0302" & crop_id == "p" ~ "80.5",
 
     #--no idea what planting rate eusun used, assume based on our same target plants
@@ -223,11 +225,13 @@ d6 <-
   mutate(planting_desc = case_when(
     env_key == "0101" & crop_id == "p" ~ "Aimed for 300 pl m-2 (1 kg perennial rye contains more seeds than 1 kg annual rye)",
     env_key == "0101" & crop_id == "a" ~ "Aimed for 300 pl m-2",
-    env_key == "0101" & crop_id == "mix" ~ "Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",
+    env_key == "0101" & crop_id == "rowmix" ~ "Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",
+    env_key == "0101" & crop_id == "bulkmix" ~ "Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",
 
     env_key == "0202" & crop_id == "p" ~ "Aimed for 250 pl m-2",
     env_key == "0202" & crop_id == "a" ~ "Aimed for 250 pl m-2",
-    env_key == "0202" & crop_id == "mix" ~ "Aimed for 250 pl m-2",
+    env_key == "0202" & crop_id == "rowmix" ~ "Aimed for 250 pl m-2",
+    env_key == "0202" & crop_id == "bulkmix" ~ "Aimed for 250 pl m-2",
 
     trt_key == "0001_17West" & trt_key == "0001_18West" ~ "Aimed for 100 pl m-2",
     trt_key == "0001_17East" & trt_key == "0001_18East" ~ "Aimed for 300 pl m-2",
