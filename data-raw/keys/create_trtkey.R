@@ -331,6 +331,3 @@ op_trtkey <-
 
 usethis::use_data(op_trtkey, overwrite = TRUE)
 
-
-op_trtkey |>
-  write_csv("inst/extdata/op_trtkey.csv")
