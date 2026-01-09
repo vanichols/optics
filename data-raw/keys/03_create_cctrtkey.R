@@ -1,5 +1,6 @@
 #--manually created a cctrtkey
 #--need to know cover crop planting details...
+#--haven't fixed yet to match other keys...
 
 library(readxl)
 library(tidyverse)
