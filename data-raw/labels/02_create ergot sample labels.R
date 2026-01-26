@@ -1,5 +1,7 @@
 Sys.setenv(LANGUAGE = "en")
 
+library(tidyverse)
+
 # ergot samples from 24/25 growing season ---------------------------------
 rm(list = ls())
 
@@ -25,11 +27,18 @@ d3 <-
   d2 |>
   crossing(sample_type)
 
-#--Excel is annoyed by the leading zeros in the environmental key, add an 'E'
-
+#--make the sample id
 d4 <-
   d3 |>
-  mutate(env_key = paste0("E-", env_key))
+  mutate(sampleID = paste(env_key, plot_id, sample_type, sep = "-"))
+
+d4 |>
+  select(-env_key, -sample_type) |>
+  rename(LocID = loc_id,
+         SeasonID = sea_id,
+         PlotID = plot_id,
+         SampleDesc = sample_desc
+  )
 
 write.table(
   d4,
