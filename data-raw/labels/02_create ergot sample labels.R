@@ -32,7 +32,8 @@ d4 <-
   d3 |>
   mutate(sampleID = paste(env_key, plot_id, sample_type, sep = "-"))
 
-d4 |>
+d5 <-
+  d4 |>
   select(-env_key, -sample_type) |>
   rename(LocID = loc_id,
          SeasonID = sea_id,
@@ -41,7 +42,7 @@ d4 |>
   )
 
 write.table(
-  d4,
+  d5,
   file = "data-raw/labels/ergot-season01-labels.csv",
   sep = ";",
   dec = ",",
