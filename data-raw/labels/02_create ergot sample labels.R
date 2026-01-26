@@ -30,7 +30,7 @@ d3 <-
 #--make the sample id
 d4 <-
   d3 |>
-  mutate(sampleID = paste(env_key, plot_id, sample_type, sep = "-"))
+  mutate(SampleID = paste(env_key, plot_id, sample_type, sep = "-"))
 
 d5 <-
   d4 |>
