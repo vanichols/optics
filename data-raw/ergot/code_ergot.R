@@ -22,10 +22,30 @@ d1 |>
   ggplot(aes(loc_id, pct_ergot_by_weight)) +
   geom_point()
 
-#--get treatments
+#--get treatments for figure
 d1 |>
   left_join(op_plotkey) |>
   left_join(op_trtkey) |>
-  select()
+  ggplot(aes(crop_id, pct_ergot_by_weight)) +
+  geom_point() +
+  facet_wrap(~loc_id)
 
-op_plotkey
+#--can we look at it as a percentage of kernals? using tkw_?
+
+
+#--so weight of ergot per 1000 kernals is about the same
+#--there are more kernals per unit weight, so as a pct of kernals, ergot will result in a raw value being higher
+d1 |>
+  left_join(op_plotkey) |>
+  left_join(op_trtkey) |>
+  left_join(
+    op_yields |>
+      filter(name == "tkw_g")
+  ) |>
+  mutate(B2_kernals = B2 / value) |>
+  select(B2_kernals, everything()) |>
+  mutate(grams_ergot_per_1000kernals = B1/B2_kernals) |>
+  ggplot(aes(crop_id, grams_ergot_per_1000kernals)) +
+  geom_point() +
+  facet_wrap(~loc_id)
+
