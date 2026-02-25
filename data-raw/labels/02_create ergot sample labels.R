@@ -48,3 +48,42 @@ write.table(
   dec = ",",
   row.names = FALSE
 )
+
+
+# make a template to fill in weights --------------------------------------
+
+#--separate the locations for cecilie
+
+d6 <-
+  d5 |>
+  mutate(SampleWeight = NA)
+
+locs <-
+  d6 |>
+  pull(LocID) |>
+  unique()
+
+
+l1 <-
+  d6 |>
+  filter(LocID == locs[1])
+
+write.table(
+  l1,
+  file = "data-raw/labels/ergot-season01-weights-eusun1.csv",
+  sep = ";",
+  dec = ",",
+  row.names = FALSE
+)
+
+l2 <-
+  d6 |>
+  filter(LocID == locs[2])
+
+write.table(
+  l2,
+  file = "data-raw/labels/ergot-season01-weights-sexy1.csv",
+  sep = ";",
+  dec = ",",
+  row.names = FALSE
+)
