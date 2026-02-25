@@ -1,3 +1,6 @@
+#--made two separate datasets
+#--op_trtkey, simple
+#--op_trtkeydetailed with row spacing, etc.
 
 library(readxl)
 library(tidyverse)
@@ -139,10 +142,10 @@ d3 <-
     crop_id == "acc" ~ "a",
     crop_id == "xacc" ~ "a",
 
-    crop_id == "aprows" ~ "rowmix",
-    crop_id == "xaprows" ~ "rowmix",
-    crop_id == "apmix" ~ "bulkmix",
-    crop_id == "xapmix" ~ "bulkmix",
+    crop_id == "aprows" ~ "mixrows",
+    crop_id == "xaprows" ~ "mixrows",
+    crop_id == "apmix" ~ "mixbulk",
+    crop_id == "xapmix" ~ "mixbulk",
 
     crop_id == "pmechwide24" ~ "p",
     crop_id == "pmechwide25" ~ "p",
@@ -193,8 +196,8 @@ d5 <-
 
     env_key == "0101" & crop_id == "p" ~ "94",
     env_key == "0101" & crop_id == "a" ~ "132",
-    env_key == "0101" & crop_id == "rowmix" ~ "113",
-    env_key == "0101" & crop_id == "bulkmix" ~ "113",
+    env_key == "0101" & crop_id == "mixrows" ~ "113",
+    env_key == "0101" & crop_id == "mixbulk" ~ "113",
     env_key == "0101" & crop_id == "p" ~ "94",
 
     env_key == "0301" ~ "94",
@@ -203,8 +206,8 @@ d5 <-
     #--lower planting rate in 25/26 season bc was planted earlier
     env_key == "0202" & crop_id == "p" ~ "80.5",
     env_key == "0202" & crop_id == "a" ~ "94",
-    env_key == "0202" & crop_id == "rowmix" ~ "88",
-    env_key == "0202" & crop_id == "bulkmix" ~ "88",
+    env_key == "0202" & crop_id == "mixrows" ~ "88",
+    env_key == "0202" & crop_id == "mixbulk" ~ "88",
     env_key == "0302" & crop_id == "p" ~ "80.5",
 
     #--no idea what planting rate eusun used, assume based on our same target plants
@@ -225,13 +228,13 @@ d6 <-
   mutate(planting_desc = case_when(
     env_key == "0101" & crop_id == "p" ~ "Aimed for 300 pl m-2 (1 kg perennial rye contains more seeds than 1 kg annual rye)",
     env_key == "0101" & crop_id == "a" ~ "Aimed for 300 pl m-2",
-    env_key == "0101" & crop_id == "rowmix" ~ "Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",
-    env_key == "0101" & crop_id == "bulkmix" ~ "Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",
+    env_key == "0101" & crop_id == "mixrows" ~ "Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",
+    env_key == "0101" & crop_id == "mixbulk" ~ "Aimed for 300 pl m-2, 1.4 kg perennial rye for every 1 kg annual rye",
 
     env_key == "0202" & crop_id == "p" ~ "Aimed for 250 pl m-2",
     env_key == "0202" & crop_id == "a" ~ "Aimed for 250 pl m-2",
-    env_key == "0202" & crop_id == "rowmix" ~ "Aimed for 250 pl m-2",
-    env_key == "0202" & crop_id == "bulkmix" ~ "Aimed for 250 pl m-2",
+    env_key == "0202" & crop_id == "mixrows" ~ "Aimed for 250 pl m-2",
+    env_key == "0202" & crop_id == "mixbulk" ~ "Aimed for 250 pl m-2",
 
     trt_key == "0001_17West" & trt_key == "0001_18West" ~ "Aimed for 100 pl m-2",
     trt_key == "0001_17East" & trt_key == "0001_18East" ~ "Aimed for 300 pl m-2",
@@ -279,7 +282,8 @@ d9 <-
     env_key == "0202" ~ ymd("2025-09-26"), #--sexy2
     env_key == "0302" ~ ymd("2025-09-25"), #--seed inc 2nd year
     env_key == "0001" ~ ymd("2024-12-31"), #--ask casandra
-  TRUE ~ ymd("2999-01-01")))
+    TRUE ~ ymd("2999-01-01")))
+
 
 # 10. biomass harvest date(s) ----------------------------------------------------------
 
@@ -324,10 +328,16 @@ d12 <-
 
 # done --------------------------------------------------------------------
 
-op_trtkey <-
+op_trtkeydetails <-
   d12 |>
   select(env_key, trt_key, trt_desc, trt_id, crop_id, herb_id,
          everything())
+
+usethis::use_data(op_trtkeydetails, overwrite = TRUE)
+
+op_trtkey <-
+  op_trtkey |>
+  select(env_key, trt_key, trt_id, crop_id, herb_id, cctrt_id)
 
 usethis::use_data(op_trtkey, overwrite = TRUE)
 
