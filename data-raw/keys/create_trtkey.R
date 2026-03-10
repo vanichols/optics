@@ -1,6 +1,7 @@
 #--made two separate datasets
 #--op_trtkey, simple
 #--op_trtkeydetailed with row spacing, etc.
+#--add fertilizer info (when known, sexy1 and seed increase are all I know right now)
 
 library(readxl)
 library(tidyverse)
@@ -303,7 +304,10 @@ d10 <-
 d11 <-
   d10 %>%
   mutate(hdate_ymd = case_when(
-    env_key == "0101" ~ ymd("2025-08-08"), #--sexy1
+    env_key == "0101" & crop_id %in% c("a", "acc", "xa", "xacc") ~
+      ymd("2025-08-08"), #--sexy1, annual
+    env_key == "0101" & !(crop_id %in% c("a", "acc", "xa", "xacc")) ~
+      ymd("2025-08-14"), #--sexy1, perennial and mixes
     env_key == "0301" ~ ymd("2025-08-15"), #--seed inc 1st year
     env_key == "0202" ~ NA, #--sexy2
     env_key == "0302" ~ NA, #--seed inc 2nd year
@@ -326,17 +330,42 @@ d12 <-
     TRUE ~ "UHOH")
   )
 
+# 13. add fert_amount and fert_description ---------------------------------------------------------
+
+#--right now all of the plots got the same fertilizer app
+#--
+
+d13 <-
+  d12 |>
+  mutate(fert_kgha = case_when(
+    env_key == "0101" ~ NA, #--sexy1
+    env_key == "0301" ~ NA, #--seed inc 1st year
+    env_key == "0202" ~ NA, #--sexy2
+    env_key == "0302" ~ NA, #--seed inc 2nd year
+    env_key == "0001" ~ ymd("2025-05-31"), #--ask casandra, this is just a guess
+    TRUE ~ ymd("2999-01-01")
+  )) |>
+  mutate(fert_description = case_when(
+    env_key == "0101" ~ NA, #--sexy1
+    env_key == "0301" ~ NA, #--seed inc 1st year
+    env_key == "0202" ~ NA, #--sexy2
+    env_key == "0302" ~ NA, #--seed inc 2nd year
+    env_key == "0001" ~ ymd("2025-05-31"), #--ask casandra, this is just a guess
+    TRUE ~ ymd("2999-01-01")
+  ))
+
+
 # done --------------------------------------------------------------------
 
 op_trtkeydetails <-
-  d12 |>
+  d13 |>
   select(env_key, trt_key, trt_desc, trt_id, crop_id, herb_id,
          everything())
 
 usethis::use_data(op_trtkeydetails, overwrite = TRUE)
 
 op_trtkey <-
-  op_trtkey |>
+  op_trtkeydetails |>
   select(env_key, trt_key, trt_id, crop_id, herb_id, cctrt_id)
 
 usethis::use_data(op_trtkey, overwrite = TRUE)
