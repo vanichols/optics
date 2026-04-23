@@ -8,14 +8,14 @@ library(tidyverse)
 
 # loc_key
 # loc_id
-# loc_au
+# loc_desc
 # loc_fieldnum
 
 #--add a new row when I add a location
 
 a1 <-
   tribble(
-  ~loc_key,  ~ loc_id,    ~loc_au,      ~loc_fieldnum,
+  ~loc_key,  ~ loc_id,    ~loc_desc,      ~loc_fieldnum,
   "00",         "eusun1",   "foulum",     "unknown",
   "01",         "sexy1",   "flakkebjerg",  "22",
   "02",         "sexy2",   "flakkebjerg",  "06",
