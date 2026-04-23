@@ -103,15 +103,15 @@ f1 <-
   bind_rows(d1) |>
   bind_rows(e1)
 
-op_plotkey <-
+op_eukey <-
   f1 |>
   separate(trt_key, into = c("env_key", "trt_id"), remove = F) |>
-  mutate(plot_key = paste0(env_key, "_", plot_id)) |>
-  select(env_key, plot_key, trt_key, plot_id, block_id)
+  mutate(eu_key = paste0(env_key, "_", plot_id)) |>
+  select(env_key, eu_key, trt_key, plot_id, block_id)
 
 
-usethis::use_data(op_plotkey, overwrite = TRUE)
+usethis::use_data(op_eukey, overwrite = TRUE)
 
 
-op_plotkey %>%
-  write_csv("inst/extdata/op_plotkey.csv")
+op_eukey %>%
+  write_csv("inst/extdata/op_eukey.csv")
