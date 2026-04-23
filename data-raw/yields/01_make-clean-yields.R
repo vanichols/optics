@@ -10,9 +10,9 @@ library(tidyverse)
 
 load("data-raw/emma/yield_sexy1.rda")
 
-# load("data/op_envkey.rda")
-# load("data/op_trtkey.rda")
-# load("data/op_plotkey.rda")
+load("data/op_envkey.rda")
+load("data/op_trtkey.rda")
+load("data/op_eukey.rda")
 
 
 #--ok, some plot halves failed...some entire plots failed. We need to distinguish between those
@@ -121,6 +121,28 @@ ylds <-
 ylds1 <-
   ylds |>
   mutate(value = ifelse(samptype == "f", NA, value))
+
+
+# change to plot_half -----------------------------------------------------
+
+ylds2 <-
+  ylds1 |>
+  mutate(plot_half = str_to_upper(samptype))
+
+# get standard info -------------------------------------------------------
+
+ylds2 |>
+  left_join(op_eukey) |>
+  left_join(op_trtkey) |>
+  left_join(op_envkey) |>
+  select(eu_key,
+         loc_id,
+         sea_id,
+         plot_id,
+         trt_id,
+         plot_half,
+         name,
+         value)
 
 
 #--write -------------------------------------------------------------------
