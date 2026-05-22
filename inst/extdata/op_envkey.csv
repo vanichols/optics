@@ -1,3 +1,9 @@
-sea_key,sea_id,sea_desc
-01,24/25,fall 2024 through end of 2025
-02,25/26,fall 2025 through end of 2026
+env_key,loc_key,sea_key,sea_id,sea_desc,loc_id,loc_desc,loc_fieldnum
+0001,00,01,24/25,fall 2024 through end of 2025,eusun1,foulum,unknown
+0101,01,01,24/25,fall 2024 through end of 2025,sexy1,flakkebjerg,22
+0301,03,01,24/25,fall 2024 through end of 2025,seed1,flakkebjerg,19
+0002,00,02,25/26,fall 2025 through end of 2026,eusun1,foulum,unknown
+0102,01,02,25/26,fall 2025 through end of 2026,sexy1,flakkebjerg,22
+0202,02,02,25/26,fall 2025 through end of 2026,sexy2,flakkebjerg,06
+0302,03,02,25/26,fall 2025 through end of 2026,seed1,flakkebjerg,19
+0402,04,02,25/26,fall 2025 through end of 2026,climax1,flakkebjerg,37
